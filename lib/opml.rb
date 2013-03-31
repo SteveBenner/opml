@@ -4,14 +4,6 @@ require 'rubygems'
 require 'active_support'
 
 class Opml
-  module VERSION #:nodoc:
-    MAJOR = 1
-    MINOR = 0
-    TINY  = 0
-
-    STRING = [MAJOR, MINOR, TINY].join('.')
-  end
-
   class Outline
     attr_accessor :attributes, :outlines
 

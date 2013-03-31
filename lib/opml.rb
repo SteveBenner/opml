@@ -3,6 +3,7 @@ require 'rexml/document'
 require 'rubygems'
 require 'active_support'
 
+module Opml
 class Opml
   class Outline
     attr_accessor :attributes, :outlines
@@ -91,4 +92,5 @@ class Opml
     def initialize_outlines_from_document_body
       document_body.elements.map { |element| Outline.new(element) }
     end
+end
 end

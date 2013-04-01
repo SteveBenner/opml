@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'rake'
-require 'rake/packagetask'
 require 'rake/gempackagetask'
 require File.join(File.dirname(__FILE__), 'lib', 'opml')
 

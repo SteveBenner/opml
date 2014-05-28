@@ -6,10 +6,10 @@ Gem::Specification.new do |s|
   s.name    = 'opml'
   s.version = Opml::VERSION
 
-  s.authors  = ["Melih Onvural", "Joshua Peek"]
+  s.authors  = ['Melih Onvural', 'Joshua Peek', 'Stephen Benner']
   s.date     = Date.today
   s.email    = ''
-  s.homepage = 'https://github.com/amplifize/opml'
+  s.homepage = 'https://github.com/SteveBenner/opml'
 
   s.summary     = 'Library to read OPML files.'
   s.description = 'Library to read OPML files.'
@@ -19,4 +19,6 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   
   s.platform = Gem::Platform::RUBY
+
+	s.add_runtime_dependency 'activesupport'
 end

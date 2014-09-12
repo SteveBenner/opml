@@ -21,10 +21,12 @@ module Opml
 
       # todo: TEST THIS!!!
       def to_hash
-        h = { self.attributes.delete['text'] => self.attributes }
+				attr = self.attributes.clone
+        h = { self.attributes['text'] => attr.delete('text') }
         unless self.outlines.empty?
-          h.merge self.outlines.to_hash
+          self.outlines.map {|o| h.update o.to_hash }
         end
+				h
       end
 
       def respond_to?(method)
